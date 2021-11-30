@@ -1,0 +1,8 @@
+/* font : Cormorant Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+.home h1{
+    color: #202028;
+    font-family: 'Cormorant Garamond',
+    serif;
+}
