@@ -174,12 +174,13 @@
 
 .side-nav .content {
     margin-left: 220px;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    background: #000;
     background-position: center;
     background-size: cover;
     height: 100vh;
     transition: 0.5s;
-    padding: 70px 0 0 30px;
+    padding: 70px 30px 20px 30px;
 }
 
 .side-nav #check:checked ~ .content {
