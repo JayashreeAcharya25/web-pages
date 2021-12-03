@@ -116,8 +116,8 @@
 
 .side-nav .sidebar a:hover {
     transition: 0.5s ease-in-out;
-    color: #5773ff;
-    border-right: 5px solid #5773ff;
+    color: #b412dd;
+    border-right: 5px solid #810b9f;
 }
 
 .side-nav .sidebar a span{
@@ -178,9 +178,9 @@
     background: #000;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     transition: 0.5s;
-    padding: 70px 30px 20px 30px;
+    padding: 50px 30px 20px 30px;
 }
 
 .side-nav #check:checked ~ .content {

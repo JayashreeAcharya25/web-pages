@@ -1,16 +1,166 @@
 /* font : Cormorant Garamond */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
-.home h1{
+/* font : Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.home .greet1 {
+    color: #acacac;
+    font-family: 'Cormorant Garamond',
+        serif;
+    font-size: 1rem;
+    word-spacing: 3px;
+}
+.home .greet2{
     color: #fff;
     font-family: 'Cormorant Garamond',
     serif;
+    font-size: 30px;
 }
 
-.home .div-card{
+.home .grid-container-1 {
+    display: flex;
+    column-gap: 20px;
+}
+
+.home .grid-container-1 .div-grid-item {
+    height: auto;
+    border-radius: 20px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1){
+    width: 60%;
+    padding: 15px 0;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .carousel-item img {
     width: 100%;
-    height: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .carousel-control-next-icon,
+.home .grid-container-1 .div-grid-item:nth-child(1) .carousel-control-prev-icon {
+
+    width: 1rem;
+    height: 1rem;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    margin: 15px 0;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card p{
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Lato',
+    sans-serif;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card{
+    background: linear-gradient(rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.5)),
+    url('../assets/images/Bg.png') no-repeat;
+    background-size: cover;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) {
+    width: 40%;
     background: #202020;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    padding: 18px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) h3{
+    color: #9d9d9d;
+    font-size: 13px;
+    font-family: 'Lato',
+    sans-serif;
+    padding: 10px 0;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) .grid-container-item{
+    display: flex;
+    padding: 10px;
+    background: #191919;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) .grid-container-item .item-info{
+    margin-left: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) .grid-container-item img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) .grid-container-item h4{
+    color: #c6c6c6;
+    font-size: 11px;
+    font-family: 'Lato',
+     sans-serif;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(2) .grid-container-item p {
+    color: #848484;
+    font-size: 10px;
+    font-family: 'Lato',
+        sans-serif;
+    margin-bottom: 0;
+}
+
+
+.home .grid-container-2{
+    background: #202020;
+    margin: 15px 0;
+    padding: 15px 5px;
+    border-radius: 20px;
+}
+
+.home .grid-container-2 .carousel-item .carousel-conatiner{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 25px;
+    margin: 0 15px;
+}
+
+.home .grid-container-2 .carousel-item .carousel-conatiner p{
+    font-size: 10px;
+    font-family: 'Lato',
+    sans-serif;
+}
+
+.home .grid-container-2 #carouselExampleInterval2 .carousel-control-next,
+.home .grid-container-2 #carouselExampleInterval2 .carousel-control-prev {
+    width: 2%;
+    opacity: 1;
+    background: #202020;
+    border-radius: 50%;
+    height: 25px;
+    margin: auto;
+    display: block;
+}
+
+.home .grid-container-2 #carouselExampleInterval2 .carousel-control-next{
+    margin-right: 0;
+}
+
+.home .grid-container-2 #carouselExampleInterval2 .carousel-control-prev {
+    margin-left: 0;
+}
+
+.home .grid-container-2 #carouselExampleInterval2 .carousel-control-next-icon,
+.home .grid-container-2 #carouselExampleInterval2 .carousel-control-prev-icon {
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    display: block;
 }
