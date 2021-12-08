@@ -1,6 +1,19 @@
 /* font : Cormorant Garamond */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #e4e3e3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #810b9f;
+    border-radius: 50px;
+}
+
 .side-nav{
     margin: 0;
     padding: 0;
@@ -108,16 +121,17 @@
     width: 100%;
     letter-spacing: 1px;
     line-height: 10px;
-    padding: 10px 10px 10px 30px;
+    padding: 15px 10px 15px 30px;
     text-decoration: none;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .side-nav .sidebar a:hover {
     transition: 0.5s ease-in-out;
     color: #b412dd;
     border-right: 5px solid #810b9f;
+    background: #191919;
 }
 
 .side-nav .sidebar a span{

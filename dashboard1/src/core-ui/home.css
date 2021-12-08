@@ -60,10 +60,30 @@
     sans-serif;
 }
 
-.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card{
-    background: linear-gradient(rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.5)),
-    url('../assets/images/Bg.png') no-repeat;
-    background-size: cover;
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card a {
+    color: #fff;
+    font-size: 8px;
+    font-family: 'Lato',
+        sans-serif;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 6px 7px;
+    border-radius: 10px;
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card:nth-child(1){
+    background: #810b9f;
+    background: linear-gradient(62deg, #810b9f 0%, #292260 100%);
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card:nth-child(2) {
+    background: #ff4a64;
+    background: linear-gradient(62deg, #ff4a64 0%, #71244e 100%);
+}
+
+.home .grid-container-1 .div-grid-item:nth-child(1) .div-card .card:nth-child(3) {
+    background: #131c84;
+    background: linear-gradient(62deg, #131c84 0%, #8278da 100%);
 }
 
 .home .grid-container-1 .div-grid-item:nth-child(2) {
