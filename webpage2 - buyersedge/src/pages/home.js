@@ -41,10 +41,6 @@ export default class home extends Component {
     const { itemData } = this.state;
     itemData.splice(index, 1);
     this.setState({ itemData: this.state.itemData });
-    // const removeItem = [...itemData];
-    // var index = removeItem.indexOf(e.target.value);
-    // removeItem.splice(index);
-    // this.setState({ itemData: removeItem });
   };
 
   handleSearch(e) {
@@ -55,15 +51,20 @@ export default class home extends Component {
     e.preventDefault();
 
     var { newArray, item, image } = this.state;
+    if (item === "") {
+      alert("Text Required");
+    } else if (image === null) {
+      alert("Image Required");
+    } else {
+      newArray.push({ item, image });
 
-    newArray.push({ item, image });
+      var arrayItem = newArray;
 
-    var arrayItem = newArray;
+      this.setState({ itemData: arrayItem });
+      console.log("ArrayItem", arrayItem);
 
-    this.setState({ itemData: arrayItem });
-    console.log("ArrayItem", arrayItem);
-
-    this.setState({ item: "" });
+      this.setState({ item: "" });
+    }
   }
 
   render() {
@@ -100,27 +101,31 @@ export default class home extends Component {
                   name="item"
                   value={this.state.item}
                   onChange={this.handleChange}
+                  required
                 />
               </div>
 
               <div uk-form-custom="target: true">
-                <input
-                  className="uk-input uk-input-bg"
-                  type="file"
-                  name="image"
-                  value={this.image}
-                  onChange={this.handleImage}
-                />
-                <input
-                  className="uk-input uk-form-width-medium"
-                  type="text"
-                  placeholder="Select file"
-                  disabled
-                />
+                <div className="uk-inline">
+                  <a className="uk-form-icon" uk-icon="icon: cloud-upload"></a>
+                  <input
+                    className="uk-input uk-input-bg"
+                    type="file"
+                    name="image"
+                    value={this.image}
+                    onChange={this.handleImage}
+                  />
+                  <input
+                    className="uk-input uk-form-width-medium"
+                    type="text"
+                    placeholder="Select file"
+                    disabled
+                  />
+                </div>
               </div>
 
               <button
-                className="jy-button uk-button-bg"
+                className="uke-button uk-button-bg"
                 type="submit"
                 value="submit"
                 onClick={this.handleOnClick}
