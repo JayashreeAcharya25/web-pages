@@ -1,0 +1,25 @@
+.uk-cursor-poiner{
+    cursor: pointer;
+}
+
+.uk-input:disabled,
+.uk-input-bg,
+.uk-button-bg{
+    background: #fff;
+}
+
+.uk-input:disabled,
+::placeholder{
+    font-size: 16px;
+    font-family: 'Tinos', serif;
+    color: #535353;
+}
+
+.uk-input,
+.uk-search-input{
+    font-size: 15px;
+}
+
+.uk-input, .uk-search-input, p, a{
+    font-family: 'Tinos', serif;
+}
