@@ -35,4 +35,11 @@ var swiper = new Swiper(".swiper-container",
     },
 
 });
+
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.splide' ).mount();
+} );
+
     
